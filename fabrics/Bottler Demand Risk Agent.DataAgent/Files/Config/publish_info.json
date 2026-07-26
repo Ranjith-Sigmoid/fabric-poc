@@ -1,0 +1,4 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/publishInfo/1.0.0/schema.json",
+  "description": "Coca-Cola Supply Chain Demand Risk Agent.\n\nAnswers questions related to forecast consumption, forecast accuracy, bottler demand risk, material demand trends, brand performance, and supply planning exceptions.\n\nUse this agent to identify forecast variance, customers requiring supply planning attention, brands consuming above forecast, and demand risk hotspots across regions and bottlers.\n\nReturns business-friendly explanations with supporting metrics and recommendations."
+}

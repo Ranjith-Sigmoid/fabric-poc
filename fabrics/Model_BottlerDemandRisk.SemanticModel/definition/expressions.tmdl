@@ -1,0 +1,11 @@
+expression 'DirectLake - to_poc_lakehouse' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/4fbe8b3d-b670-4760-9125-b67e30c56d75/4c48fa07-10f0-4713-a2c0-c5ee12f3f0b3", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: f9b3ff6b-1d16-4763-95c8-8ae3b8cc36a3
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[processed_files]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[dl_salesdocumentschedulelines]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[dl_salesorder]"}},"objectType":"Table"}]
+

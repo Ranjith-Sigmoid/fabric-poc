@@ -1,0 +1,1092 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "5acfb901-c88a-b5a7-40ae-af0109ca5929",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "Coke_agent_model",
+  "type": "semantic_model",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "ad658b54-0f11-4f41-9db5-3281694ead4e",
+      "is_selected": true,
+      "display_name": "Optimization_vw",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "b48884e6-1f32-4e07-a6a6-9151f5269a4f",
+          "is_selected": true,
+          "display_name": "ORDER_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2e09214e-3ad7-45b9-843d-6447df946d54",
+          "is_selected": true,
+          "display_name": "ORDER_STATUS",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a370fda4-001a-4f58-b7f2-9fb810b3c685",
+          "is_selected": true,
+          "display_name": "SOURCE",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1fb7934a-1f3e-4c65-bfcd-1ccbf0875ad9",
+          "is_selected": true,
+          "display_name": "ACCOUNT_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b6f84d75-fcd7-4b1c-8e19-f612a2a8cf41",
+          "is_selected": true,
+          "display_name": "PLANT_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "892e1c0a-aea2-45f6-a102-31ee51224695",
+          "is_selected": true,
+          "display_name": "CURRENCY",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f34bb5c7-06a0-4128-948c-7cd689ba40ec",
+          "is_selected": true,
+          "display_name": "SOLD_TO",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c042d235-1351-46f9-b2f7-3167d8f80f6a",
+          "is_selected": true,
+          "display_name": "SHIP_TO",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "22ce9a77-4f85-4949-a71a-6d58adb2020b",
+          "is_selected": true,
+          "display_name": "TRANSPORT_MODE",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ef95e600-37a9-4ea9-8603-72672b5c2354",
+          "is_selected": true,
+          "display_name": "DELIVERY_DATE",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "de907a79-3a2d-421a-a073-c5b0beb760b8",
+          "is_selected": true,
+          "display_name": "SALES_DOCUMENT_DATE",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2ee4b491-d51b-4554-9df2-f3278c2f9f01",
+          "is_selected": true,
+          "display_name": "ORDER_LINE_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9453b981-d60e-4231-a3f4-3567f45bf498",
+          "is_selected": true,
+          "display_name": "LINE_NUMBER",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0065aabc-2b00-46f3-8428-638fb768fc43",
+          "is_selected": true,
+          "display_name": "ITEM_TYPE",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "12409e2d-a5ec-41ae-9c5d-fca0d42c1ba6",
+          "is_selected": true,
+          "display_name": "ITEM_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9ad13b3e-1236-4230-9079-ef62c6378c28",
+          "is_selected": true,
+          "display_name": "ITEM_NAME",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c3784e9e-a0df-4d9f-bc92-faacf03771da",
+          "is_selected": true,
+          "display_name": "SKU_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2b23d4e2-9039-47c7-84e3-ec39a7010042",
+          "is_selected": true,
+          "display_name": "UOM",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6bd79d02-7a1e-447e-9bd9-90f571e57d83",
+          "is_selected": true,
+          "display_name": "BASE_UNITS",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "27c3838e-3f2d-46e0-9568-bfc1844597f8",
+          "is_selected": true,
+          "display_name": "ORDER_QUANTITY",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "77e1aafc-0c14-4e9f-af15-f01fac3d910e",
+          "is_selected": true,
+          "display_name": "CONFIRMED_DELIVERY_QTY",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0a97aeaa-cf4a-4752-9b0f-d075fcb74958",
+          "is_selected": true,
+          "display_name": "ORDER_CLOSED",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b0b8a056-19db-4470-8ef2-007038e81c8a",
+          "is_selected": true,
+          "display_name": "KIT_HEADER_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "59c724a1-bdd9-4489-b5d3-71e0c01acfa4",
+          "is_selected": true,
+          "display_name": "KIT_PLANT",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f628b252-a2dd-4b99-93d9-d4b4cbf2379d",
+          "is_selected": true,
+          "display_name": "KIT_COUNTRY",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3358a0e8-e97b-4819-8cb6-165e302aa642",
+          "is_selected": true,
+          "display_name": "KIT_SHIP_TO",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9a6891dc-b9c1-473e-a278-d2225eb084fc",
+          "is_selected": true,
+          "display_name": "KIT_SOLD_TO",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1f9524e2-841b-4b78-9b3d-255cfda18e04",
+          "is_selected": true,
+          "display_name": "KIT_CUSTOMER_GROUP",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fc862ff0-6ffc-4d18-a219-764e42693274",
+          "is_selected": true,
+          "display_name": "KIT_TRANSPORT_MODE",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f67e9d9e-0234-46b8-9ff5-c7ba8557a973",
+          "is_selected": true,
+          "display_name": "SHIPPING_CONDITIONS",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a0393cb0-45d5-47f2-aef6-d6282a149b38",
+          "is_selected": true,
+          "display_name": "KIT_DETAIL_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4764c361-1b6d-4a8a-a000-4ed65db21e8d",
+          "is_selected": true,
+          "display_name": "KIT",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c488505e-de74-4996-94c7-f679967458f6",
+          "is_selected": true,
+          "display_name": "KIT_QTY",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e75287aa-1905-4bd4-bc5e-2bef4d49b286",
+          "is_selected": true,
+          "display_name": "KIT_BASE_UNITS",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e0878a42-1669-4917-9805-f5653375ddbf",
+          "is_selected": true,
+          "display_name": "TOTAL_UOM",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a27c3cf5-e8c1-428f-b069-578479b95ef1",
+          "is_selected": true,
+          "display_name": "VARIANT_SUMMARY_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fd35ce06-cc57-4b4a-bd9e-f138bad275ca",
+          "is_selected": true,
+          "display_name": "VARIANT_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "85ed8d5f-742c-4ddc-a418-4f8fa10ccf6e",
+          "is_selected": true,
+          "display_name": "VARIANT_ITEM_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3f0a8c11-cf7c-4f69-bb6e-57fbe8575eaa",
+          "is_selected": true,
+          "display_name": "VARIANT_ITEM_NAME",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c07aaf54-fad8-4e30-a210-f55fcc9d1d06",
+          "is_selected": true,
+          "display_name": "VARIANT_SKU_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a2231d43-42db-4581-acb3-a89539d62fc6",
+          "is_selected": true,
+          "display_name": "VARIANT_BASE_UNITS",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b4aeca4d-d8b1-4385-9358-fc9b73d323e2",
+          "is_selected": true,
+          "display_name": "ORIGINAL_QTY",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ba943db2-f615-4002-93b3-b3ecdf889606",
+          "is_selected": true,
+          "display_name": "PROPOSED_QTY",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4efaf948-6759-4c2a-9cbe-531316786675",
+          "is_selected": true,
+          "display_name": "CHANGE_QTY",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0f33081a-8e55-4f61-94cf-f5e781ce11b8",
+          "is_selected": true,
+          "display_name": "FORECAST_QTY",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "eb079429-6688-4227-9ec6-8bea40c9ccca",
+          "is_selected": true,
+          "display_name": "DELIVERED_QTY",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "cbbfce8d-03d5-4d53-b0d1-88267a318a45",
+          "is_selected": true,
+          "display_name": "VARIANT_METRICS_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "dcc5535f-2433-424f-9097-5a501643b1fe",
+          "is_selected": true,
+          "display_name": "VARIANT_METRIC_TYPE",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3168cb44-8b3c-4ae2-8f03-7ae76924c69f",
+          "is_selected": true,
+          "display_name": "NUMBER_OF_CONTAINERS",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "dea7738f-d2ea-4df9-99b3-e06ec28b8970",
+          "is_selected": true,
+          "display_name": "MAX_UTILIZATION_PCT",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a926e6bd-6f8d-4cc2-a8ad-92142a46a6d6",
+          "is_selected": true,
+          "display_name": "MAX_UTILIZATION_LAST_TRUCK",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3d03bd92-199d-43d2-9e75-ab003e8a9419",
+          "is_selected": true,
+          "display_name": "LAST_TRUCK_WEIGHT",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "bc68243b-6c64-40ff-a800-0bf9852dd431",
+          "is_selected": true,
+          "display_name": "LAST_TRUCK_UTILIZATION",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "160db7dc-a1e5-48af-a9b3-9244994557ed",
+          "is_selected": true,
+          "display_name": "LAST_TRUCK_PALLETS",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ff91d92e-a61c-4521-81ec-b71023f5f717",
+          "is_selected": true,
+          "display_name": "LAST_PALLET_UTILIZATION",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "8f1ead76-5cd4-4268-8258-30c75f87f748",
+      "is_selected": true,
+      "display_name": "Utilization_vw",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "ee808834-46df-4029-8f43-7b0f853f089d",
+          "is_selected": true,
+          "display_name": "ORDER_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4d5cb7f9-0f18-47fc-a1d2-fea2dfa482bc",
+          "is_selected": true,
+          "display_name": "ORDER_STATUS",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "97ba630c-05ef-4aca-91c9-23f8a5968d78",
+          "is_selected": true,
+          "display_name": "SOURCE",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "14e69d93-7206-4a58-897b-ef28b2bac184",
+          "is_selected": true,
+          "display_name": "ACCOUNT_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3890c38d-bac3-47ad-84c2-1cf673223359",
+          "is_selected": true,
+          "display_name": "PLANT_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "abad0da5-a70b-4f1a-8c92-fcb2d66e8f28",
+          "is_selected": true,
+          "display_name": "CURRENCY",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d10829d7-60f9-4707-a0d7-583cb1377f11",
+          "is_selected": true,
+          "display_name": "TRANSPORT_MODE",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fa79c66e-0abe-472f-81f1-8ba530613756",
+          "is_selected": true,
+          "display_name": "DELIVERY_DATE",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ffeb93b3-1956-4a22-9b03-3752ec80a735",
+          "is_selected": true,
+          "display_name": "LINE_NUMBER",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1a107fa1-1d3a-474d-9973-1b3ee50398ec",
+          "is_selected": true,
+          "display_name": "ITEM_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4b0af5df-6783-4ffb-8131-c3fb4131a7ab",
+          "is_selected": true,
+          "display_name": "ITEM_NAME",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b2f6f081-97d8-434a-919b-c1448c252357",
+          "is_selected": true,
+          "display_name": "SKU_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3b176a72-a893-49ee-a0f9-763c0ae54ed0",
+          "is_selected": true,
+          "display_name": "UOM",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1c34e652-36b3-428c-9b9a-caa5a2f651ef",
+          "is_selected": true,
+          "display_name": "QUANTITY",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2459fd90-180a-4a4a-8c86-55bb7803f30f",
+          "is_selected": true,
+          "display_name": "BASE_UNITS",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "88a7ae79-77df-42e9-bcaa-77ef4694cf1d",
+          "is_selected": true,
+          "display_name": "UTILIZATION_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "65bc0c13-bb8d-4367-b053-857427250c1f",
+          "is_selected": true,
+          "display_name": "VARIANT_ID",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c5136aab-c7bb-4a1d-8201-a32eec8e3370",
+          "is_selected": true,
+          "display_name": "NUMBER_OF_CONTAINERS",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "eb569285-7969-42a0-bd2e-62fc87b7053f",
+          "is_selected": true,
+          "display_name": "MAX_UTILIZATION_PCT",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d84d9eb0-d1c5-4e17-8247-b68948bb95c6",
+          "is_selected": true,
+          "display_name": "MAX_LAST_CONTAINER_PCT",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "cfbf15ce-c01a-44a9-ad47-9fa6a52048db",
+          "is_selected": true,
+          "display_name": "ROW_TYPE",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "57274a21-6782-4ff2-b2f3-5e65ce7624a4",
+          "is_selected": true,
+          "display_name": "UTILIZATION_METRIC",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0bb48bd8-b5ef-46bf-addb-079d44bb9081",
+          "is_selected": true,
+          "display_name": "CAPACITY",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "da6f5b83-cfbd-4bc3-89a9-36d02fb9fc7b",
+          "is_selected": true,
+          "display_name": "ACTUAL",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9c51ef4d-d4cf-4131-9371-52c2a06cd804",
+          "is_selected": true,
+          "display_name": "GAP",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3e8d0698-b5c6-459a-933f-b8831135c5ce",
+          "is_selected": true,
+          "display_name": "UTILIZATION_PCT",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3b8cb2c2-7676-4a8f-b859-bded6ca83440",
+          "is_selected": true,
+          "display_name": "EQUIPMENT_NAME",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f2360748-641e-458c-93e4-e2bb8689b656",
+          "is_selected": true,
+          "display_name": "WEIGHT_IN_TONS",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "51caa22c-3d78-4b9c-a575-e4140b5b3d59",
+          "is_selected": true,
+          "display_name": "EQUIPMENT_PALLET_COUNT",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fe5a00cc-ea8c-4bf5-af8c-2b5ece2d926a",
+          "is_selected": true,
+          "display_name": "CONTAINER_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "cb0b6dca-efd5-4ad8-b625-dcf4af8829be",
+          "is_selected": true,
+          "display_name": "CONTAINER_LABEL",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2c4587a8-0863-4c8a-afea-f7f9cbe595bc",
+          "is_selected": true,
+          "display_name": "CONTAINER_TYPE",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1b934836-b9d7-4132-92cc-87e8a77f7aa3",
+          "is_selected": true,
+          "display_name": "CONTAINER_LENGTH",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "844950dc-3b7d-4fd9-8db0-b671e9eb3b0b",
+          "is_selected": true,
+          "display_name": "CONTAINER_WIDTH",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "077dbb7f-0cb2-4a54-b917-7d20fecb2f8d",
+          "is_selected": true,
+          "display_name": "CONTAINER_HEIGHT",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "16b0f4ab-8876-40bf-b57f-9de70a384dd0",
+          "is_selected": true,
+          "display_name": "CONTAINER_PALLET_COUNT",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e4a8967c-e82f-4a2e-b1be-2346211d4ab0",
+          "is_selected": true,
+          "display_name": "CONTAINER_MAX_UTILIZATION",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9cd5eaca-5403-455a-9c08-42463f38a1ab",
+          "is_selected": true,
+          "display_name": "CONTAINER_METRIC",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "33466ead-01b5-4a30-ba14-ab66d2e1c61e",
+          "is_selected": true,
+          "display_name": "CONTAINER_CAPACITY",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5a22d095-ff0b-4a7a-95c3-e0e6c80b47b0",
+          "is_selected": true,
+          "display_name": "CONTAINER_ACTUAL",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a254eaf4-81b6-4487-ae3b-acda778775b5",
+          "is_selected": true,
+          "display_name": "CONTAINER_GAP",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "7f15ab4b-984e-455b-b759-7ce3b14476f7",
+          "is_selected": true,
+          "display_name": "CONTAINER_UTILIZATION_PCT",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1a218356-5370-4672-b15e-cb15303a1ed9",
+          "is_selected": true,
+          "display_name": "PALLET_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "abbd0128-a2d2-43c4-95de-cefa53028caf",
+          "is_selected": true,
+          "display_name": "PALLET_NAME",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "31b5a027-8617-49cb-bc65-9a5e8f9fc297",
+          "is_selected": true,
+          "display_name": "GROUP_NAME",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1463bb6a-0f9a-43c9-b889-03bdf986caa1",
+          "is_selected": true,
+          "display_name": "PALLET_TYPE",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "07332595-221e-408f-94e0-93f8361768e2",
+          "is_selected": true,
+          "display_name": "CATEGORY",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "867238b5-68d6-456e-9022-ef34fbfd7f58",
+          "is_selected": true,
+          "display_name": "PALLET_HEIGHT_OCCUPIED",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "351580fc-6b39-4e82-bed5-f9a6488b1190",
+          "is_selected": true,
+          "display_name": "PALLET_VOLUME_OCCUPIED",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "92d4204d-f0b4-4956-b0d2-904370ef0532",
+          "is_selected": true,
+          "display_name": "PALLET_WEIGHT_OCCUPIED",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e37f1457-051f-489c-a63e-0013487bb4c4",
+          "is_selected": true,
+          "display_name": "WEIGHT_CAPACITY",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a390d4b2-d659-4096-8175-9e7b0d818a1d",
+          "is_selected": true,
+          "display_name": "VOLUME_CAPACITY",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9833fc4c-e8ca-4700-9e17-48db01650939",
+          "is_selected": true,
+          "display_name": "KIT",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "18613428-8c4e-4b86-ac75-1022a7c80eff",
+          "is_selected": true,
+          "display_name": "SKU",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3f36d825-b827-4af7-8a1b-699b0b5ba596",
+          "is_selected": true,
+          "display_name": "CUSTOMER_GROUP",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "8a20a40f-ea32-4307-88a8-707ebd22acf0",
+          "is_selected": true,
+          "display_name": "MATERIAL_GROUP",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "89f97353-d9c5-47cd-9055-62af7367bb10",
+          "is_selected": true,
+          "display_name": "PALLET_QTY",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fa19f4f4-e598-4440-ad21-8026079ea2dd",
+          "is_selected": true,
+          "display_name": "WEIGHT_PER_UNIT",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5fd0da9a-ae35-470f-9434-da0d50de6d18",
+          "is_selected": true,
+          "display_name": "VOLUME_PER_UNIT",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "06512c9f-9bf0-4514-b472-d04cfd180b3a",
+          "is_selected": true,
+          "display_name": "TOTAL_WEIGHT",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "52fbf866-23ac-478f-b70b-f2ab4ee93e2d",
+          "is_selected": true,
+          "display_name": "TOTAL_VOLUME",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "31d0b195-76fa-45f3-b03f-783caf49d4b4",
+          "is_selected": true,
+          "display_name": "DANGEROUS_GOODS",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4cbbc562-8491-437c-a3a7-93c5f0b37f17",
+          "is_selected": true,
+          "display_name": "DESCRIPTION",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

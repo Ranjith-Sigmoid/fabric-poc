@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SQLDatabase",
+    "displayName": "coke_db_t"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9dca3ebb-cc59-9fa1-4941-e6077c719d95"
+  }
+}

@@ -1,0 +1,698 @@
+table Utilization_vw
+	lineageTag: 8f1ead76-5cd4-4268-8258-30c75f87f748
+	sourceLineageTag: [dbo].[Utilization_vw]
+
+	column ORDER_ID
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: ee808834-46df-4029-8f43-7b0f853f089d
+		sourceLineageTag: ORDER_ID
+		summarizeBy: none
+		sourceColumn: ORDER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ORDER_STATUS
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 4d5cb7f9-0f18-47fc-a1d2-fea2dfa482bc
+		sourceLineageTag: ORDER_STATUS
+		summarizeBy: none
+		sourceColumn: ORDER_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOURCE
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 97ba630c-05ef-4aca-91c9-23f8a5968d78
+		sourceLineageTag: SOURCE
+		summarizeBy: none
+		sourceColumn: SOURCE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ACCOUNT_ID
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 14e69d93-7206-4a58-897b-ef28b2bac184
+		sourceLineageTag: ACCOUNT_ID
+		summarizeBy: none
+		sourceColumn: ACCOUNT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PLANT_ID
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 3890c38d-bac3-47ad-84c2-1cf673223359
+		sourceLineageTag: PLANT_ID
+		summarizeBy: none
+		sourceColumn: PLANT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CURRENCY
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: abad0da5-a70b-4f1a-8c92-fcb2d66e8f28
+		sourceLineageTag: CURRENCY
+		summarizeBy: none
+		sourceColumn: CURRENCY
+
+		annotation SummarizationSetBy = Automatic
+
+	column TRANSPORT_MODE
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: d10829d7-60f9-4707-a0d7-583cb1377f11
+		sourceLineageTag: TRANSPORT_MODE
+		summarizeBy: none
+		sourceColumn: TRANSPORT_MODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column DELIVERY_DATE
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: fa79c66e-0abe-472f-81f1-8ba530613756
+		sourceLineageTag: DELIVERY_DATE
+		summarizeBy: none
+		sourceColumn: DELIVERY_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column LINE_NUMBER
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: ffeb93b3-1956-4a22-9b03-3752ec80a735
+		sourceLineageTag: LINE_NUMBER
+		summarizeBy: none
+		sourceColumn: LINE_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column ITEM_ID
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 1a107fa1-1d3a-474d-9973-1b3ee50398ec
+		sourceLineageTag: ITEM_ID
+		summarizeBy: none
+		sourceColumn: ITEM_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ITEM_NAME
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 4b0af5df-6783-4ffb-8131-c3fb4131a7ab
+		sourceLineageTag: ITEM_NAME
+		summarizeBy: none
+		sourceColumn: ITEM_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column SKU_ID
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: b2f6f081-97d8-434a-919b-c1448c252357
+		sourceLineageTag: SKU_ID
+		summarizeBy: none
+		sourceColumn: SKU_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column UOM
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 3b176a72-a893-49ee-a0f9-763c0ae54ed0
+		sourceLineageTag: UOM
+		summarizeBy: none
+		sourceColumn: UOM
+
+		annotation SummarizationSetBy = Automatic
+
+	column QUANTITY
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1c34e652-36b3-428c-9b9a-caa5a2f651ef
+		sourceLineageTag: QUANTITY
+		summarizeBy: sum
+		sourceColumn: QUANTITY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BASE_UNITS
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 2459fd90-180a-4a4a-8c86-55bb7803f30f
+		sourceLineageTag: BASE_UNITS
+		summarizeBy: none
+		sourceColumn: BASE_UNITS
+
+		annotation SummarizationSetBy = Automatic
+
+	column UTILIZATION_ID
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 88a7ae79-77df-42e9-bcaa-77ef4694cf1d
+		sourceLineageTag: UTILIZATION_ID
+		summarizeBy: none
+		sourceColumn: UTILIZATION_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column VARIANT_ID
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 65bc0c13-bb8d-4367-b053-857427250c1f
+		sourceLineageTag: VARIANT_ID
+		summarizeBy: count
+		sourceColumn: VARIANT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NUMBER_OF_CONTAINERS
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c5136aab-c7bb-4a1d-8201-a32eec8e3370
+		sourceLineageTag: NUMBER_OF_CONTAINERS
+		summarizeBy: sum
+		sourceColumn: NUMBER_OF_CONTAINERS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MAX_UTILIZATION_PCT
+		dataType: double
+		sourceProviderType: float
+		lineageTag: eb569285-7969-42a0-bd2e-62fc87b7053f
+		sourceLineageTag: MAX_UTILIZATION_PCT
+		summarizeBy: sum
+		sourceColumn: MAX_UTILIZATION_PCT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MAX_LAST_CONTAINER_PCT
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d84d9eb0-d1c5-4e17-8247-b68948bb95c6
+		sourceLineageTag: MAX_LAST_CONTAINER_PCT
+		summarizeBy: sum
+		sourceColumn: MAX_LAST_CONTAINER_PCT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ROW_TYPE
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: cfbf15ce-c01a-44a9-ad47-9fa6a52048db
+		sourceLineageTag: ROW_TYPE
+		summarizeBy: none
+		sourceColumn: ROW_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column UTILIZATION_METRIC
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 57274a21-6782-4ff2-b2f3-5e65ce7624a4
+		sourceLineageTag: UTILIZATION_METRIC
+		summarizeBy: none
+		sourceColumn: UTILIZATION_METRIC
+
+		annotation SummarizationSetBy = Automatic
+
+	column CAPACITY
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 0bb48bd8-b5ef-46bf-addb-079d44bb9081
+		sourceLineageTag: CAPACITY
+		summarizeBy: sum
+		sourceColumn: CAPACITY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ACTUAL
+		dataType: double
+		sourceProviderType: float
+		lineageTag: da6f5b83-cfbd-4bc3-89a9-36d02fb9fc7b
+		sourceLineageTag: ACTUAL
+		summarizeBy: sum
+		sourceColumn: ACTUAL
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column GAP
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 9c51ef4d-d4cf-4131-9371-52c2a06cd804
+		sourceLineageTag: GAP
+		summarizeBy: sum
+		sourceColumn: GAP
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UTILIZATION_PCT
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3e8d0698-b5c6-459a-933f-b8831135c5ce
+		sourceLineageTag: UTILIZATION_PCT
+		summarizeBy: sum
+		sourceColumn: UTILIZATION_PCT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EQUIPMENT_NAME
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 3b8cb2c2-7676-4a8f-b859-bded6ca83440
+		sourceLineageTag: EQUIPMENT_NAME
+		summarizeBy: none
+		sourceColumn: EQUIPMENT_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column WEIGHT_IN_TONS
+		dataType: double
+		sourceProviderType: float
+		lineageTag: f2360748-641e-458c-93e4-e2bb8689b656
+		sourceLineageTag: WEIGHT_IN_TONS
+		summarizeBy: sum
+		sourceColumn: WEIGHT_IN_TONS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EQUIPMENT_PALLET_COUNT
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 51caa22c-3d78-4b9c-a575-e4140b5b3d59
+		sourceLineageTag: EQUIPMENT_PALLET_COUNT
+		summarizeBy: sum
+		sourceColumn: EQUIPMENT_PALLET_COUNT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CONTAINER_ID
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: fe5a00cc-ea8c-4bf5-af8c-2b5ece2d926a
+		sourceLineageTag: CONTAINER_ID
+		summarizeBy: none
+		sourceColumn: CONTAINER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONTAINER_LABEL
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: cb0b6dca-efd5-4ad8-b625-dcf4af8829be
+		sourceLineageTag: CONTAINER_LABEL
+		summarizeBy: none
+		sourceColumn: CONTAINER_LABEL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONTAINER_TYPE
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 2c4587a8-0863-4c8a-afea-f7f9cbe595bc
+		sourceLineageTag: CONTAINER_TYPE
+		summarizeBy: none
+		sourceColumn: CONTAINER_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONTAINER_LENGTH
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1b934836-b9d7-4132-92cc-87e8a77f7aa3
+		sourceLineageTag: CONTAINER_LENGTH
+		summarizeBy: sum
+		sourceColumn: CONTAINER_LENGTH
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CONTAINER_WIDTH
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 844950dc-3b7d-4fd9-8db0-b671e9eb3b0b
+		sourceLineageTag: CONTAINER_WIDTH
+		summarizeBy: sum
+		sourceColumn: CONTAINER_WIDTH
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CONTAINER_HEIGHT
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 077dbb7f-0cb2-4a54-b917-7d20fecb2f8d
+		sourceLineageTag: CONTAINER_HEIGHT
+		summarizeBy: sum
+		sourceColumn: CONTAINER_HEIGHT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CONTAINER_PALLET_COUNT
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 16b0f4ab-8876-40bf-b57f-9de70a384dd0
+		sourceLineageTag: CONTAINER_PALLET_COUNT
+		summarizeBy: sum
+		sourceColumn: CONTAINER_PALLET_COUNT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CONTAINER_MAX_UTILIZATION
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: e4a8967c-e82f-4a2e-b1be-2346211d4ab0
+		sourceLineageTag: CONTAINER_MAX_UTILIZATION
+		summarizeBy: none
+		sourceColumn: CONTAINER_MAX_UTILIZATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONTAINER_METRIC
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 9cd5eaca-5403-455a-9c08-42463f38a1ab
+		sourceLineageTag: CONTAINER_METRIC
+		summarizeBy: none
+		sourceColumn: CONTAINER_METRIC
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONTAINER_CAPACITY
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 33466ead-01b5-4a30-ba14-ab66d2e1c61e
+		sourceLineageTag: CONTAINER_CAPACITY
+		summarizeBy: sum
+		sourceColumn: CONTAINER_CAPACITY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CONTAINER_ACTUAL
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 5a22d095-ff0b-4a7a-95c3-e0e6c80b47b0
+		sourceLineageTag: CONTAINER_ACTUAL
+		summarizeBy: sum
+		sourceColumn: CONTAINER_ACTUAL
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CONTAINER_GAP
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a254eaf4-81b6-4487-ae3b-acda778775b5
+		sourceLineageTag: CONTAINER_GAP
+		summarizeBy: sum
+		sourceColumn: CONTAINER_GAP
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CONTAINER_UTILIZATION_PCT
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 7f15ab4b-984e-455b-b759-7ce3b14476f7
+		sourceLineageTag: CONTAINER_UTILIZATION_PCT
+		summarizeBy: sum
+		sourceColumn: CONTAINER_UTILIZATION_PCT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PALLET_ID
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 1a218356-5370-4672-b15e-cb15303a1ed9
+		sourceLineageTag: PALLET_ID
+		summarizeBy: none
+		sourceColumn: PALLET_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PALLET_NAME
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: abbd0128-a2d2-43c4-95de-cefa53028caf
+		sourceLineageTag: PALLET_NAME
+		summarizeBy: none
+		sourceColumn: PALLET_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column GROUP_NAME
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 31b5a027-8617-49cb-bc65-9a5e8f9fc297
+		sourceLineageTag: GROUP_NAME
+		summarizeBy: none
+		sourceColumn: GROUP_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column PALLET_TYPE
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 1463bb6a-0f9a-43c9-b889-03bdf986caa1
+		sourceLineageTag: PALLET_TYPE
+		summarizeBy: none
+		sourceColumn: PALLET_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORY
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 07332595-221e-408f-94e0-93f8361768e2
+		sourceLineageTag: CATEGORY
+		summarizeBy: none
+		sourceColumn: CATEGORY
+
+		annotation SummarizationSetBy = Automatic
+
+	column PALLET_HEIGHT_OCCUPIED
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 867238b5-68d6-456e-9022-ef34fbfd7f58
+		sourceLineageTag: PALLET_HEIGHT_OCCUPIED
+		summarizeBy: sum
+		sourceColumn: PALLET_HEIGHT_OCCUPIED
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PALLET_VOLUME_OCCUPIED
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 351580fc-6b39-4e82-bed5-f9a6488b1190
+		sourceLineageTag: PALLET_VOLUME_OCCUPIED
+		summarizeBy: sum
+		sourceColumn: PALLET_VOLUME_OCCUPIED
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PALLET_WEIGHT_OCCUPIED
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 92d4204d-f0b4-4956-b0d2-904370ef0532
+		sourceLineageTag: PALLET_WEIGHT_OCCUPIED
+		summarizeBy: sum
+		sourceColumn: PALLET_WEIGHT_OCCUPIED
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WEIGHT_CAPACITY
+		dataType: double
+		sourceProviderType: float
+		lineageTag: e37f1457-051f-489c-a63e-0013487bb4c4
+		sourceLineageTag: WEIGHT_CAPACITY
+		summarizeBy: sum
+		sourceColumn: WEIGHT_CAPACITY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VOLUME_CAPACITY
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a390d4b2-d659-4096-8175-9e7b0d818a1d
+		sourceLineageTag: VOLUME_CAPACITY
+		summarizeBy: sum
+		sourceColumn: VOLUME_CAPACITY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KIT
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 9833fc4c-e8ca-4700-9e17-48db01650939
+		sourceLineageTag: KIT
+		summarizeBy: none
+		sourceColumn: KIT
+
+		annotation SummarizationSetBy = Automatic
+
+	column SKU
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 18613428-8c4e-4b86-ac75-1022a7c80eff
+		sourceLineageTag: SKU
+		summarizeBy: none
+		sourceColumn: SKU
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUSTOMER_GROUP
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 3f36d825-b827-4af7-8a1b-699b0b5ba596
+		sourceLineageTag: CUSTOMER_GROUP
+		summarizeBy: none
+		sourceColumn: CUSTOMER_GROUP
+
+		annotation SummarizationSetBy = Automatic
+
+	column MATERIAL_GROUP
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 8a20a40f-ea32-4307-88a8-707ebd22acf0
+		sourceLineageTag: MATERIAL_GROUP
+		summarizeBy: none
+		sourceColumn: MATERIAL_GROUP
+
+		annotation SummarizationSetBy = Automatic
+
+	column PALLET_QTY
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 89f97353-d9c5-47cd-9055-62af7367bb10
+		sourceLineageTag: PALLET_QTY
+		summarizeBy: none
+		sourceColumn: PALLET_QTY
+
+		annotation SummarizationSetBy = Automatic
+
+	column WEIGHT_PER_UNIT
+		dataType: double
+		sourceProviderType: float
+		lineageTag: fa19f4f4-e598-4440-ad21-8026079ea2dd
+		sourceLineageTag: WEIGHT_PER_UNIT
+		summarizeBy: sum
+		sourceColumn: WEIGHT_PER_UNIT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VOLUME_PER_UNIT
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 5fd0da9a-ae35-470f-9434-da0d50de6d18
+		sourceLineageTag: VOLUME_PER_UNIT
+		summarizeBy: sum
+		sourceColumn: VOLUME_PER_UNIT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TOTAL_WEIGHT
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 06512c9f-9bf0-4514-b472-d04cfd180b3a
+		sourceLineageTag: TOTAL_WEIGHT
+		summarizeBy: none
+		sourceColumn: TOTAL_WEIGHT
+
+		annotation SummarizationSetBy = Automatic
+
+	column TOTAL_VOLUME
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 52fbf866-23ac-478f-b70b-f2ab4ee93e2d
+		sourceLineageTag: TOTAL_VOLUME
+		summarizeBy: sum
+		sourceColumn: TOTAL_VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DANGEROUS_GOODS
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 31d0b195-76fa-45f3-b03f-783caf49d4b4
+		sourceLineageTag: DANGEROUS_GOODS
+		summarizeBy: none
+		sourceColumn: DANGEROUS_GOODS
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESCRIPTION
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 4cbbc562-8491-437c-a3a7-93c5f0b37f17
+		sourceLineageTag: DESCRIPTION
+		summarizeBy: none
+		sourceColumn: DESCRIPTION
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Utilization_vw = entity
+		mode: directLake
+		source
+			entityName: Utilization_vw
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

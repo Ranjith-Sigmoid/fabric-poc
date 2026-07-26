@@ -1,0 +1,536 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "d9cf7ca1-ec31-b31c-4717-51380564cdc7",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "Model_BottlerDemandRisk",
+  "type": "semantic_model",
+  "userDescription": null,
+  "metadata": {
+    "csdl_relationships": "[{\"FromTable\":\"fact_m0_forecast\",\"FromColumn\":\"Customer_ID\",\"ToTable\":\"dl_customermaster\",\"ToColumn\":\"CUSTOMER\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"fact_m0_forecast\",\"FromColumn\":\"Material_ID\",\"ToTable\":\"dl_materialmaster\",\"ToColumn\":\"Material_ID\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"}]"
+  },
+  "elements": [
+    {
+      "id": "708153df-3605-42f5-b3fe-bae1f365d683",
+      "is_selected": true,
+      "display_name": "dl_customermaster",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "1072c798-b7bf-437c-8f8f-7f094665b229",
+          "is_selected": true,
+          "display_name": "CUSTOMER",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5b3f250a-ffb1-4589-9af2-73eebe819c7c",
+          "is_selected": true,
+          "display_name": "CUSTOMERNAME",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "af56486a-0d68-443d-97e6-546da60db4b6",
+          "is_selected": true,
+          "display_name": "COUNTRY",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a14314a3-7dc8-42b6-81d1-1f5209f2ae3e",
+          "is_selected": true,
+          "display_name": "CITYNAME",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "521595d5-b69e-494f-82ef-e8f00e65255c",
+          "is_selected": true,
+          "display_name": "PLANT",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9aa948b2-277e-478e-bd00-96908fa8c58f",
+          "is_selected": true,
+          "display_name": "CURRENCY",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5bd2a43c-f581-4f5d-a189-7cc7d16c0c7c",
+          "is_selected": true,
+          "display_name": "CUSTOMER_GROUP",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "30d89a95-7aed-4910-9ee0-ceb71f12c503",
+          "is_selected": true,
+          "display_name": "PARENT_BOTTLER",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "cbbb6fe6-8d52-4cea-8c45-04920ea50d44",
+          "is_selected": true,
+          "display_name": "REGION",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "4d2a660b-4f77-431a-beef-fb0e588066d7",
+      "is_selected": true,
+      "display_name": "dl_materialmaster",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "c7475152-b83d-4a82-91ae-c7b31fadc33a",
+          "is_selected": true,
+          "display_name": "Material_ID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "68d404a9-ceed-48d7-99ba-be5d972ae3af",
+          "is_selected": true,
+          "display_name": "Materialtype",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c764ac51-64b4-4952-bf80-580526cf9a57",
+          "is_selected": true,
+          "display_name": "MaterialGroup",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4ab7c4b7-a74b-44a9-8187-2b15c2ac6d2c",
+          "is_selected": true,
+          "display_name": "BaseUnitofMeasure",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fdf40ce7-9c49-4403-8a79-1cff15d8b096",
+          "is_selected": true,
+          "display_name": "BrandDescription",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d8a8a634-cd04-4823-ae1c-8b03b1f78c32",
+          "is_selected": true,
+          "display_name": "MaterialDescription",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4d705122-5233-480e-90b3-aefa7bb90f0a",
+          "is_selected": true,
+          "display_name": "Volume",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c74e11f2-9aa7-48de-bda2-bd6eb0d50375",
+          "is_selected": true,
+          "display_name": "WeightPerCase",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "362c7d40-ceb8-4c55-9868-714c30d7778b",
+          "is_selected": true,
+          "display_name": "CasesPerPallet",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fd4cb049-568a-46eb-ac9e-e3298588b451",
+          "is_selected": true,
+          "display_name": "PalletHeightCM",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "cf726394-ab3e-4b02-83b3-11e5f67923da",
+          "is_selected": true,
+          "display_name": "PalletWeightKG",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "501f615f-06ee-4868-976f-1b6041a90924",
+          "is_selected": true,
+          "display_name": "TruckType",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ed9183fc-8298-4181-888a-228ded701a2d",
+          "is_selected": true,
+          "display_name": "MaxTruckCapacityKG",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "17a2b935-1440-4759-92f5-299360de56b2",
+          "is_selected": true,
+          "display_name": "MaxTruckPalletCapacity",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "c3100a4a-d7bd-4184-a809-26b86c5c3acb",
+      "is_selected": true,
+      "display_name": "fact_bottler_demand_risk",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "f22047b9-a9a5-4478-b283-e4f334eb76dc",
+          "is_selected": true,
+          "display_name": "Fiscal_Month",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "27677855-2914-4245-b90c-77eb7969fe2f",
+          "is_selected": true,
+          "display_name": "Plant_ID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "cc7ae7d2-14fe-42c9-b2ed-90a0f98e85c3",
+          "is_selected": true,
+          "display_name": "CUSTOMER",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "596f5044-d08c-410a-ad24-3a8a3086109d",
+          "is_selected": true,
+          "display_name": "CUSTOMERNAME",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "138353c3-55c2-4619-86e6-9def8ed1336b",
+          "is_selected": true,
+          "display_name": "CUSTOMER_GROUP",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ffc1078a-d489-4e0b-8632-070794e25914",
+          "is_selected": true,
+          "display_name": "PARENT_BOTTLER",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c60d4478-4983-4c3d-8328-251a783588fe",
+          "is_selected": true,
+          "display_name": "REGION",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4f7cc268-23b9-417a-92c7-eff03ffb715e",
+          "is_selected": true,
+          "display_name": "COUNTRY",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "07c757d1-8d24-4c9b-8b61-87f639937fec",
+          "is_selected": true,
+          "display_name": "CITYNAME",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a3dbc4ff-744d-4594-8b5f-821d61442c4b",
+          "is_selected": true,
+          "display_name": "MaterialNumber",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d874bd6a-03ca-4372-bed2-c3fe69d57ea7",
+          "is_selected": true,
+          "display_name": "BrandDescription",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "75fd4dcb-a085-4387-8f64-1727dcd816fc",
+          "is_selected": true,
+          "display_name": "MaterialDescription",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "946a20d6-0d6a-4bb4-ac16-7f98d7761804",
+          "is_selected": true,
+          "display_name": "Forecast_Qty",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "faed1210-0f6b-4b2e-9d77-160245ceb3e1",
+          "is_selected": true,
+          "display_name": "Consumed_Qty",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9e95b26d-7ad2-4d0d-923c-fcb0e6e310ee",
+          "is_selected": true,
+          "display_name": "Variance_Qty",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "8b4ad5e1-b82b-4990-b6e0-7d03c8274b54",
+          "is_selected": true,
+          "display_name": "Variance_Pct",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9136c8b6-55a1-4486-b809-819ec2d31608",
+          "is_selected": true,
+          "display_name": "Risk_Level",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "21816532-25d5-41f0-b61b-af61a4c1f55e",
+      "is_selected": true,
+      "display_name": "fact_m0_forecast",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "4fbbbeae-7910-4f6d-842b-338a9581aaaf",
+          "is_selected": true,
+          "display_name": "Plant_Id",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "db622249-8a78-4bda-be13-7a11aee81475",
+          "is_selected": true,
+          "display_name": "Customer_ID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "616a9062-6864-44c0-898d-b5c61f4a418a",
+          "is_selected": true,
+          "display_name": "Material_ID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "da4ab90b-0f47-475f-8f20-1e60fe0ec027",
+          "is_selected": true,
+          "display_name": "Fiscal_Month",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "38ae3db5-0939-4892-a7fd-c92c3aacf52a",
+          "is_selected": true,
+          "display_name": "Forecast_Qty",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4cfb204c-752b-413a-aca1-dbb85d7e8259",
+          "is_selected": true,
+          "display_name": "Consumed_Qty",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b6391df6-b308-4faa-810f-9e598716b6db",
+          "is_selected": true,
+          "display_name": "Variance_Qty",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5838c3f8-6d83-40e2-87c6-2a766255fed4",
+          "is_selected": true,
+          "display_name": "Forecast_Consumption_Pct",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0510b468-463e-4698-bf8e-894246cc69f4",
+          "is_selected": true,
+          "display_name": "Risk_Category",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d49c91c8-4929-413b-ad9e-59369f8d8fd8",
+          "is_selected": true,
+          "display_name": "Total Forecast",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "524b93dc-ff88-44fd-9835-be16807b28bd",
+          "is_selected": true,
+          "display_name": "Total Consumption",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e8b6ea4e-46cb-4dde-83a7-f023eacb0a7f",
+          "is_selected": true,
+          "display_name": "Variance Qty",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a4e68b2f-78b6-49fc-a930-9db52cf30e31",
+          "is_selected": true,
+          "display_name": "Forecast Accuracy %",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a0371d16-55bd-40a7-a219-e65334b01ab7",
+          "is_selected": true,
+          "display_name": "High Risk Bottlers",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

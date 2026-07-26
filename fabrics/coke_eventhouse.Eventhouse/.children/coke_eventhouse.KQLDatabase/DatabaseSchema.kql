@@ -1,0 +1,14 @@
+// KQL script
+// Use management commands in this script to configure your database items, such as tables, functions, materialized views, and more.
+
+
+.create-merge table ev_salesOrder (fabricsource:string, fabricsubject:string, source:string, specversion:string, type:string, ['time']:string, subject:string, id:string, data:dynamic, specversion_1:real, id_1:guid, time_1:datetime) 
+.create-or-alter table ev_salesOrder ingestion json mapping 'ev_salesOrder_mapping'
+```
+[{"Properties":{"Path":"$['fabricsource']"},"column":"fabricsource","datatype":""},{"Properties":{"Path":"$['fabricsubject']"},"column":"fabricsubject","datatype":""},{"Properties":{"Path":"$['source']"},"column":"source","datatype":""},{"Properties":{"Path":"$['type']"},"column":"type","datatype":""},{"Properties":{"Path":"$['subject']"},"column":"subject","datatype":""},{"Properties":{"Path":"$['data']"},"column":"data","datatype":""},{"Properties":{"Path":"$['specversion']"},"column":"specversion_1","datatype":""},{"Properties":{"Path":"$['id']"},"column":"id_1","datatype":""},{"Properties":{"Path":"$['time']"},"column":"time_1","datatype":""}]
+```
+.create-merge table ['ev-matmstr'] (source:string, fabricsource:string, id:string, specversion:string, type:string, subject:string, ['time']:string, fabricsubject:string, data:dynamic, specversion_1:real, id_1:guid, time_1:datetime) 
+.create-or-alter table ['ev-matmstr'] ingestion json mapping 'ev-matmstr_mapping'
+```
+[{"Properties":{"Path":"$['source']"},"column":"source","datatype":""},{"Properties":{"Path":"$['fabricsource']"},"column":"fabricsource","datatype":""},{"Properties":{"Path":"$['type']"},"column":"type","datatype":""},{"Properties":{"Path":"$['subject']"},"column":"subject","datatype":""},{"Properties":{"Path":"$['fabricsubject']"},"column":"fabricsubject","datatype":""},{"Properties":{"Path":"$['data']"},"column":"data","datatype":""},{"Properties":{"Path":"$['specversion']"},"column":"specversion_1","datatype":""},{"Properties":{"Path":"$['id']"},"column":"id_1","datatype":""},{"Properties":{"Path":"$['time']"},"column":"time_1","datatype":""}]
+```

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "coke_eventhouse",
+    "description": "coke_eventhouse"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7e2554bc-5a9d-9e29-47c4-ea2fbf841373"
+  }
+}

@@ -1,0 +1,156 @@
+table fact_m0_forecast
+	lineageTag: 21816532-25d5-41f0-b61b-af61a4c1f55e
+	sourceLineageTag: [dbo].[fact_m0_forecast]
+
+	measure 'Total Forecast' =
+			
+			SUM(fact_m0_forecast[Forecast_Qty])
+		lineageTag: d49c91c8-4929-413b-ad9e-59369f8d8fd8
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Consumption' =
+			
+			SUM(fact_m0_forecast[Consumed_Qty])
+		lineageTag: 524b93dc-ff88-44fd-9835-be16807b28bd
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Variance Qty' =
+			
+			[Total Consumption] - [Total Forecast]
+		lineageTag: e8b6ea4e-46cb-4dde-83a7-f023eacb0a7f
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Forecast Accuracy %' =
+			
+			1 -
+			ABS(
+			    DIVIDE(
+			        [Variance Qty],
+			        [Total Forecast]
+			    )
+			)
+		lineageTag: a4e68b2f-78b6-49fc-a930-9db52cf30e31
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'High Risk Bottlers' =
+			
+			CALCULATE(
+			    COUNTROWS(fact_m0_forecast),
+			    fact_m0_forecast[Risk_Category] = "Critical"
+			)
+		formatString: 0
+		lineageTag: a0371d16-55bd-40a7-a219-e65334b01ab7
+
+		changedProperty = Name
+
+	column Plant_Id
+		dataType: string
+		lineageTag: 4fbbbeae-7910-4f6d-842b-338a9581aaaf
+		sourceLineageTag: Plant_Id
+		summarizeBy: none
+		sourceColumn: Plant_Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: db622249-8a78-4bda-be13-7a11aee81475
+		sourceLineageTag: Customer_ID
+		summarizeBy: none
+		sourceColumn: Customer_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Material_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 616a9062-6864-44c0-898d-b5c61f4a418a
+		sourceLineageTag: Material_ID
+		summarizeBy: none
+		sourceColumn: Material_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Month
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: da4ab90b-0f47-475f-8f20-1e60fe0ec027
+		sourceLineageTag: Fiscal_Month
+		summarizeBy: none
+		sourceColumn: Fiscal_Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Forecast_Qty
+		dataType: double
+		lineageTag: 38ae3db5-0939-4892-a7fd-c92c3aacf52a
+		sourceLineageTag: Forecast_Qty
+		summarizeBy: sum
+		sourceColumn: Forecast_Qty
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Consumed_Qty
+		dataType: double
+		lineageTag: 4cfb204c-752b-413a-aca1-dbb85d7e8259
+		sourceLineageTag: Consumed_Qty
+		summarizeBy: sum
+		sourceColumn: Consumed_Qty
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Variance_Qty
+		dataType: double
+		lineageTag: b6391df6-b308-4faa-810f-9e598716b6db
+		sourceLineageTag: Variance_Qty
+		summarizeBy: sum
+		sourceColumn: Variance_Qty
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Forecast_Consumption_Pct
+		dataType: double
+		lineageTag: 5838c3f8-6d83-40e2-87c6-2a766255fed4
+		sourceLineageTag: Forecast_Consumption_Pct
+		summarizeBy: sum
+		sourceColumn: Forecast_Consumption_Pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Risk_Category
+		dataType: string
+		lineageTag: 0510b468-463e-4698-bf8e-894246cc69f4
+		sourceLineageTag: Risk_Category
+		summarizeBy: none
+		sourceColumn: Risk_Category
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_m0_forecast = entity
+		mode: directLake
+		source
+			entityName: fact_m0_forecast
+			schemaName: dbo
+			expressionSource: 'DirectLake - to_poc_lakehouse'
+

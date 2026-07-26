@@ -1,0 +1,8 @@
+relationship c3d3923d-fb39-20c0-407f-56ad37d65362
+	fromColumn: fact_m0_forecast.Customer_ID
+	toColumn: dl_customermaster.CUSTOMER
+
+relationship dd6b7b5e-a471-c03c-47c5-76e026f76f96
+	fromColumn: fact_m0_forecast.Material_ID
+	toColumn: dl_materialmaster.Material_ID
+

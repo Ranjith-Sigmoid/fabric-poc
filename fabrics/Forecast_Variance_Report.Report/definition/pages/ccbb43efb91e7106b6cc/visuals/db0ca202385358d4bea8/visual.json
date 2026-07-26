@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "db0ca202385358d4bea8",
+  "position": {
+    "x": 20,
+    "y": 554,
+    "z": 13000,
+    "height": 154,
+    "width": 606,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_m0_forecast"
+                    }
+                  },
+                  "Property": "Plant_Id"
+                }
+              },
+              "queryRef": "fact_m0_forecast.Plant_Id",
+              "nativeQueryRef": "Plant_Id",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_m0_forecast"
+                        }
+                      },
+                      "Property": "Forecast_Qty"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fact_m0_forecast.Forecast_Qty)",
+              "nativeQueryRef": "Sum of Forecast_Qty"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "fact_m0_forecast"
+                      }
+                    },
+                    "Property": "Forecast_Qty"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Eventstream",
+    "displayName": "coke_eventstream"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "67f5f228-ef71-8bc8-4d48-c9442148a4bc"
+  }
+}

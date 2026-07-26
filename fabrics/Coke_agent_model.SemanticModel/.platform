@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Coke_agent_model"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5acfb901-c88a-b5a7-40ae-af0109ca5929"
+  }
+}

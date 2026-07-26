@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "KV-access-notebook"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e8dbc7b0-7cea-9987-430b-ca3eb5ad224a"
+  }
+}

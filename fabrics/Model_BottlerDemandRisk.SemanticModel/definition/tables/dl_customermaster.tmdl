@@ -1,0 +1,94 @@
+table dl_customermaster
+	lineageTag: 708153df-3605-42f5-b3fe-bae1f365d683
+	sourceLineageTag: [dbo].[dl_customermaster]
+
+	column CUSTOMER
+		dataType: int64
+		formatString: 0
+		lineageTag: 1072c798-b7bf-437c-8f8f-7f094665b229
+		sourceLineageTag: CUSTOMER
+		summarizeBy: none
+		sourceColumn: CUSTOMER
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUSTOMERNAME
+		dataType: string
+		lineageTag: 5b3f250a-ffb1-4589-9af2-73eebe819c7c
+		sourceLineageTag: CUSTOMERNAME
+		summarizeBy: none
+		sourceColumn: CUSTOMERNAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column COUNTRY
+		dataType: string
+		lineageTag: af56486a-0d68-443d-97e6-546da60db4b6
+		sourceLineageTag: COUNTRY
+		summarizeBy: none
+		sourceColumn: COUNTRY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CITYNAME
+		dataType: string
+		lineageTag: a14314a3-7dc8-42b6-81d1-1f5209f2ae3e
+		sourceLineageTag: CITYNAME
+		summarizeBy: none
+		sourceColumn: CITYNAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column PLANT
+		dataType: int64
+		formatString: 0
+		lineageTag: 521595d5-b69e-494f-82ef-e8f00e65255c
+		sourceLineageTag: PLANT
+		summarizeBy: none
+		sourceColumn: PLANT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CURRENCY
+		dataType: string
+		lineageTag: 9aa948b2-277e-478e-bd00-96908fa8c58f
+		sourceLineageTag: CURRENCY
+		summarizeBy: none
+		sourceColumn: CURRENCY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUSTOMER_GROUP
+		dataType: string
+		lineageTag: 5bd2a43c-f581-4f5d-a189-7cc7d16c0c7c
+		sourceLineageTag: CUSTOMER_GROUP
+		summarizeBy: none
+		sourceColumn: CUSTOMER_GROUP
+
+		annotation SummarizationSetBy = Automatic
+
+	column PARENT_BOTTLER
+		dataType: string
+		lineageTag: 30d89a95-7aed-4910-9ee0-ceb71f12c503
+		sourceLineageTag: PARENT_BOTTLER
+		summarizeBy: none
+		sourceColumn: PARENT_BOTTLER
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: cbbb6fe6-8d52-4cea-8c45-04920ea50d44
+		sourceLineageTag: REGION
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dl_customermaster = entity
+		mode: directLake
+		source
+			entityName: dl_customermaster
+			schemaName: dbo
+			expressionSource: 'DirectLake - to_poc_lakehouse'
+

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "processed",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "34a3748e-8fba-49ca-ac6c-97f6beada951",
+        "location": "https://storagestruckutilpoc.dfs.core.windows.net",
+        "subpath": "/processed"
+      }
+    }
+  },
+  {
+    "name": "dropzone",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "34a3748e-8fba-49ca-ac6c-97f6beada951",
+        "location": "https://storagestruckutilpoc.dfs.core.windows.net",
+        "subpath": "/dropzone"
+      }
+    }
+  }
+]

@@ -1,0 +1,149 @@
+table dl_materialmaster
+	lineageTag: 4d2a660b-4f77-431a-beef-fb0e588066d7
+	sourceLineageTag: [dbo].[dl_materialmaster]
+
+	column Material_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: c7475152-b83d-4a82-91ae-c7b31fadc33a
+		sourceLineageTag: Material_ID
+		summarizeBy: none
+		sourceColumn: Material_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Materialtype
+		dataType: string
+		lineageTag: 68d404a9-ceed-48d7-99ba-be5d972ae3af
+		sourceLineageTag: Materialtype
+		summarizeBy: none
+		sourceColumn: Materialtype
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaterialGroup
+		dataType: int64
+		formatString: 0
+		lineageTag: c764ac51-64b4-4952-bf80-580526cf9a57
+		sourceLineageTag: MaterialGroup
+		summarizeBy: none
+		sourceColumn: MaterialGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column BaseUnitofMeasure
+		dataType: string
+		lineageTag: 4ab7c4b7-a74b-44a9-8187-2b15c2ac6d2c
+		sourceLineageTag: BaseUnitofMeasure
+		summarizeBy: none
+		sourceColumn: BaseUnitofMeasure
+
+		annotation SummarizationSetBy = Automatic
+
+	column BrandDescription
+		dataType: string
+		lineageTag: fdf40ce7-9c49-4403-8a79-1cff15d8b096
+		sourceLineageTag: BrandDescription
+		summarizeBy: none
+		sourceColumn: BrandDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaterialDescription
+		dataType: string
+		lineageTag: d8a8a634-cd04-4823-ae1c-8b03b1f78c32
+		sourceLineageTag: MaterialDescription
+		summarizeBy: none
+		sourceColumn: MaterialDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column Volume
+		dataType: double
+		lineageTag: 4d705122-5233-480e-90b3-aefa7bb90f0a
+		sourceLineageTag: Volume
+		summarizeBy: none
+		sourceColumn: Volume
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WeightPerCase
+		dataType: double
+		lineageTag: c74e11f2-9aa7-48de-bda2-bd6eb0d50375
+		sourceLineageTag: WeightPerCase
+		summarizeBy: none
+		sourceColumn: WeightPerCase
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CasesPerPallet
+		dataType: int64
+		formatString: 0
+		lineageTag: 362c7d40-ceb8-4c55-9868-714c30d7778b
+		sourceLineageTag: CasesPerPallet
+		summarizeBy: none
+		sourceColumn: CasesPerPallet
+
+		annotation SummarizationSetBy = Automatic
+
+	column PalletHeightCM
+		dataType: int64
+		formatString: 0
+		lineageTag: fd4cb049-568a-46eb-ac9e-e3298588b451
+		sourceLineageTag: PalletHeightCM
+		summarizeBy: none
+		sourceColumn: PalletHeightCM
+
+		annotation SummarizationSetBy = Automatic
+
+	column PalletWeightKG
+		dataType: double
+		lineageTag: cf726394-ab3e-4b02-83b3-11e5f67923da
+		sourceLineageTag: PalletWeightKG
+		summarizeBy: none
+		sourceColumn: PalletWeightKG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TruckType
+		dataType: string
+		lineageTag: 501f615f-06ee-4868-976f-1b6041a90924
+		sourceLineageTag: TruckType
+		summarizeBy: none
+		sourceColumn: TruckType
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaxTruckCapacityKG
+		dataType: int64
+		formatString: 0
+		lineageTag: ed9183fc-8298-4181-888a-228ded701a2d
+		sourceLineageTag: MaxTruckCapacityKG
+		summarizeBy: none
+		sourceColumn: MaxTruckCapacityKG
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaxTruckPalletCapacity
+		dataType: int64
+		formatString: 0
+		lineageTag: 17a2b935-1440-4759-92f5-299360de56b2
+		sourceLineageTag: MaxTruckPalletCapacity
+		summarizeBy: none
+		sourceColumn: MaxTruckPalletCapacity
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dl_materialmaster = entity
+		mode: directLake
+		source
+			entityName: dl_materialmaster
+			schemaName: dbo
+			expressionSource: 'DirectLake - to_poc_lakehouse'
+

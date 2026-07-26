@@ -1,0 +1,176 @@
+table fact_bottler_demand_risk
+	lineageTag: c3100a4a-d7bd-4184-a809-26b86c5c3acb
+	sourceLineageTag: [dbo].[fact_bottler_demand_risk]
+
+	column Fiscal_Month
+		dataType: string
+		isHidden
+		lineageTag: f22047b9-a9a5-4478-b283-e4f334eb76dc
+		sourceLineageTag: Fiscal_Month
+		summarizeBy: none
+		sourceColumn: Fiscal_Month
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Plant_ID
+		dataType: string
+		lineageTag: 27677855-2914-4245-b90c-77eb7969fe2f
+		sourceLineageTag: Plant_ID
+		summarizeBy: none
+		sourceColumn: Plant_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUSTOMER
+		dataType: int64
+		formatString: 0
+		lineageTag: cc7ae7d2-14fe-42c9-b2ed-90a0f98e85c3
+		sourceLineageTag: CUSTOMER
+		summarizeBy: sum
+		sourceColumn: CUSTOMER
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUSTOMERNAME
+		dataType: string
+		lineageTag: 596f5044-d08c-410a-ad24-3a8a3086109d
+		sourceLineageTag: CUSTOMERNAME
+		summarizeBy: none
+		sourceColumn: CUSTOMERNAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUSTOMER_GROUP
+		dataType: string
+		lineageTag: 138353c3-55c2-4619-86e6-9def8ed1336b
+		sourceLineageTag: CUSTOMER_GROUP
+		summarizeBy: none
+		sourceColumn: CUSTOMER_GROUP
+
+		annotation SummarizationSetBy = Automatic
+
+	column PARENT_BOTTLER
+		dataType: string
+		lineageTag: ffc1078a-d489-4e0b-8632-070794e25914
+		sourceLineageTag: PARENT_BOTTLER
+		summarizeBy: none
+		sourceColumn: PARENT_BOTTLER
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: c60d4478-4983-4c3d-8328-251a783588fe
+		sourceLineageTag: REGION
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column COUNTRY
+		dataType: string
+		lineageTag: 4f7cc268-23b9-417a-92c7-eff03ffb715e
+		sourceLineageTag: COUNTRY
+		summarizeBy: none
+		sourceColumn: COUNTRY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CITYNAME
+		dataType: string
+		lineageTag: 07c757d1-8d24-4c9b-8b61-87f639937fec
+		sourceLineageTag: CITYNAME
+		summarizeBy: none
+		sourceColumn: CITYNAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaterialNumber
+		dataType: string
+		lineageTag: a3dbc4ff-744d-4594-8b5f-821d61442c4b
+		sourceLineageTag: MaterialNumber
+		summarizeBy: none
+		sourceColumn: MaterialNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column BrandDescription
+		dataType: string
+		lineageTag: d874bd6a-03ca-4372-bed2-c3fe69d57ea7
+		sourceLineageTag: BrandDescription
+		summarizeBy: none
+		sourceColumn: BrandDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaterialDescription
+		dataType: string
+		lineageTag: 75fd4dcb-a085-4387-8f64-1727dcd816fc
+		sourceLineageTag: MaterialDescription
+		summarizeBy: none
+		sourceColumn: MaterialDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column Forecast_Qty
+		dataType: double
+		lineageTag: 946a20d6-0d6a-4bb4-ac16-7f98d7761804
+		sourceLineageTag: Forecast_Qty
+		summarizeBy: sum
+		sourceColumn: Forecast_Qty
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Consumed_Qty
+		dataType: double
+		lineageTag: faed1210-0f6b-4b2e-9d77-160245ceb3e1
+		sourceLineageTag: Consumed_Qty
+		summarizeBy: sum
+		sourceColumn: Consumed_Qty
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Variance_Qty
+		dataType: double
+		lineageTag: 9e95b26d-7ad2-4d0d-923c-fcb0e6e310ee
+		sourceLineageTag: Variance_Qty
+		summarizeBy: sum
+		sourceColumn: Variance_Qty
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Variance_Pct
+		dataType: double
+		lineageTag: 8b4ad5e1-b82b-4990-b6e0-7d03c8274b54
+		sourceLineageTag: Variance_Pct
+		summarizeBy: sum
+		sourceColumn: Variance_Pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Risk_Level
+		dataType: string
+		lineageTag: 9136c8b6-55a1-4486-b809-819ec2d31608
+		sourceLineageTag: Risk_Level
+		summarizeBy: none
+		sourceColumn: Risk_Level
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_bottler_demand_risk = entity
+		mode: directLake
+		source
+			entityName: fact_bottler_demand_risk
+			schemaName: dbo
+			expressionSource: 'DirectLake - to_poc_lakehouse'
+
